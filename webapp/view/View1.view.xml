@@ -1,0 +1,59 @@
+<mvc:View controllerName="doc.assignment-2.controller.View1" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m"
+	xmlns:form="sap.ui.layout.form" xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+						<form:SimpleForm id="form1" title="Documents">
+							<Label id="label0" text="Corporate/Division/Site" required="true"/>
+							<ComboBox id="box0" width="auto" change="showDocumentType">
+								<items>
+									<core:Item key="item-1-key" text="12-HUA" id="item0"/>
+									<core:Item key="item-2-key" text="01-FBC" id="item1"/>
+									<core:Item key="item-3-key" text="14-KJA" id="item2"/>
+									<core:Item key="item-4-key" text="08-NJC" id="item3"/>
+								</items>
+							</ComboBox>
+							<Label id="label1" text="Document Type" required="true" />
+							<ComboBox id="box1" width="auto" change="showDepartment">
+								<items>
+									<core:Item key="item-1-key" text="20-PROCEDURE" id="item4"/>
+									<core:Item key="item-2-key" text="12-PROCEDURE" id="item5"/>
+									<core:Item key="item-3-key" text="11-PROCEDURE" id="item6"/>
+									<core:Item key="item-4-key" text="06-PROCEDURE" id="item7"/>
+								</items>
+							</ComboBox>
+							<Label id="label2" text="Function/Department" required="true"/>
+							<ComboBox id="box2" width="auto" change="showCustomer">
+								<items>
+									<core:Item key="item-1-key" text="IE-Industrial Engineering" id="item8"/>
+									<core:Item key="item-2-key" text="SE-Software Engineering" id="item9"/>
+									<core:Item key="item-3-key" text="PA-Project Analysis" id="item10"/>
+									<core:Item key="item-4-key" text="D-Delivery" id="item11"/>
+								</items>
+							</ComboBox>
+							<Label id="label3" text="Customer" required="true"/>
+							<ComboBox id="box3" width="auto" change="generateProposedNumber">
+								<items>
+									<core:Item key="item-1-key" text="00HPT" id="item12"/>
+									<core:Item key="item-2-key" text="01FBC" id="item13"/>
+									<core:Item key="item-3-key" text="14KJA" id="item14"/>
+									<core:Item key="item-4-key" text="08NJC" id="item15"/>
+								</items>
+							</ComboBox>
+							<Label id="label4" text="Proposed Number"/>
+							<Input id="purposedNumber" editable="false"/>
+						</form:SimpleForm>
+					</content>
+					<footer>
+						<OverflowToolbar id="idFooter">
+							<ToolbarSpacer/>
+							<Button press="onButtonPress" text="Submit"/>
+						</OverflowToolbar>
+					</footer>	
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

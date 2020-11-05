@@ -1,0 +1,17 @@
+<mvc:View controllerName="doc.assignment-2.controller.View2" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m"
+	xmlns:form="sap.ui.layout.form" xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="view 2" showNavButton="true" navButtonPress="onButtonPress">
+					<content>
+						<form:SimpleForm id="form1" title="Documents">
+							<Label text="Document Number" required="true"/>
+							<Input id = "showPurposedNumber" editable="false" width="auto"/>
+						</form:SimpleForm>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
